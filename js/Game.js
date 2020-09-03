@@ -80,7 +80,7 @@ class Game {
 
     }
     //car will move if up arrow is pressed
-    if(keyIsDown(UP_ARROW) || player.index !== null){
+    if(keyIsDown(UP_ARROW) && player.index !== null){
       player.distance +=10
       player.update();
     }
